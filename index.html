@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: "Averox";
+        src: url("assets/fonts/averox/averox.ttf");
+      }
+      @font-face {
+        font-family: "Freya";
+        src: url("assets/fonts/freya/FREYA___.TTF");
+      }
+      @font-face {
+        font-family: "Mechsuit";
+        src: url("assets/fonts/mechsuit/Mechsuit.otf");
+      }
+    </style>
+
+    <title>Comic Perfect</title>
+  </head>
+  <body>
+    <header
+      class="flex items-center h-9 w-full px-16 justify-between bg-comicbg border-b"
+    >
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2">
+          <img src="assets/icons/email-svgrepo-com.svg" alt="" class="h-4" />
+          <p class="text-base font-thin cursor-pointer hover:text-velvet">
+            Example@gmail.com
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <img
+            src="assets/icons/location-pin-alt-1-svgrepo-com.svg"
+            alt=""
+            class="h-4"
+          />
+          <p class="text-base font-thin cursor-pointer hover:text-velvet">
+            3B, Sector 1, Address, City
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <img
+          src="assets/icons/facebook-176-svgrepo-com.svg"
+          alt=""
+          class="h-4"
+        />
+        <img src="assets/icons/twitter-svgrepo-com.svg" alt="" class="h-4" />
+        <img
+          src="assets/icons/youtube-168-svgrepo-com.svg"
+          alt=""
+          class="h-4"
+        />
+        <img
+          src="assets/icons/instagram-svgrepo-com (1).svg"
+          alt=""
+          class="h-4"
+        />
+        <img src="assets/icons/tiktok-svgrepo-com.svg" alt="" class="h-4" />
+      </div>
+    </header>
+
+    <nav class="flex flex-col w-full h-48">
+      <div class="flex items-center justify-between h-3/5 px-16">
+        <img src="assets/images/comic.avif" alt="" />
+        <div class="flex items-center gap-4">
+          <img src="assets/icons/phone-svgrepo-com.svg" alt="" class="h-8" />
+          <div class="flex flex-col text-center">
+            <span class="font-thin text-base">Get Support</span>
+            <p class="font-bold text-lg">123-456-789-10</p>
+          </div>
+        </div>
+        <div class="flex items-center w-2/5 h-auto border justify-between">
+          <input
+            type="text"
+            class="outline-none border-none py-3 px-4 w-4/5"
+            placeholder="Search our store"
+          />
+          <img
+            src="assets/icons/search-svgrepo-com.svg"
+            alt=""
+            class="h-6 mr-3"
+          />
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2">
+            <img src="assets/icons/user-svgrepo-com.svg" alt="" class="h-7" />
+            <img
+              src="assets/icons/cart-shopping-svgrepo-com.svg"
+              alt=""
+              class="h-7"
+            />
+          </div>
+          <div class="flex flex-col">
+            <p class="text-base font-semibold">Your cart</p>
+            <p class="text-lg font-bold text-velvet">$0.00</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center mx-auto gap-6 bg-velvet py-3 w-full"
+      >
+        <span class="font-bold text-lg text-white">Home</span>
+        <span class="font-bold text-lg text-white">Shpe</span>
+        <span class="font-bold text-lg text-white">Shop</span>
+        <span class="font-bold text-lg text-white">Collection</span>
+        <span class="font-bold text-lg text-white">Pages</span>
+      </div>
+    </nav>
+
+    <!-- special offers -->
+    <div class="flex gap-20 px-16">
+      <!-- all categories -->
+      <div class="flex flex-col w-1/3 h-auto">
+        <div class="flex items-center w-full bg-comicbg px-5 py-4 gap-3">
+          <img src="assets/icons/menu-svgrepo-com.svg" alt="" class="h-5" />
+          <span class="font-bold text-base font-averox">All categories</span>
+          <img
+            src="assets/icons/arrow-down-338-svgrepo-com.svg"
+            alt=""
+            class="h-3 ml-20"
+          />
+        </div>
+        <div class="flex flex-col w-full h-auto border">
+          <div
+            class="flex w-full px-5 py-4 border-b border-dashed transition duration-100 group hover:bg-comicbg"
+          >
+            <p class="text-base font-thin group-hover:text-velvet">
+              Action & Adventure
+            </p>
+          </div>
+          <div
+            class="flex w-full px-5 py-4 border-b border-dashed transition duration-100 group hover:bg-comicbg"
+          >
+            <p class="text-base font-thin group-hover:text-velvet">
+              Art of comics
+            </p>
+          </div>
+          <div
+            class="flex w-full px-5 py-4 border-dashed border-b transition duration-100 group hover:bg-comicbg"
+          >
+            <p class="text-base font-thin group-hover:text-velvet">
+              Fantasy Novels
+            </p>
+          </div>
+          <div
+            class="flex w-full px-5 py-4 border-b-dashed transition duration-100 group hover:bg-comicbg"
+          >
+            <p class="text-base font-thin group-hover:text-velvet">
+              Superhero Comics
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-10 w-3/4 bg-comicbg p-8">
+        <div class="flex flex-col gap-5 w-2/4">
+          <span class="text-velvet font-bold text-xl">All Stories</span>
+          <h1 class="font-averox font-bold text-5xl">Comics Stories</h1>
+          <p class="text-lg font-thin">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            blanditiis debitis eaque similique
+          </p>
+          <button
+            class="border transition duration-200 border-velvet bg-velvet py-4 w-2/5 text-white hover:text-velvet hover:bg-transparent"
+          >
+            SHOP NOW
+          </button>
+        </div>
+        <img src="assets/images/marvel.png" alt="" class="w-2/4" />
+      </div>
+    </div>
+
+    <section
+      class="grid grid-cols-4 grid-rows-4 gap-4 w-full mx-auto my-24 px-16 h-[80vh]"
+    >
+      <div
+        class="relative col-span-2 row-span-4 w-full h-full rounded-lg overflow-hidden justify-between text-center bg-gradient-to-b from-[#2A2E3A] via-transparent to-[#CADAEA]"
+      >
+        <h1
+          class="text-5xl font-bold font-mechsuit text-white z-10 absolute top-[45%] -left-28 z-10 -rotate-90"
+        >
+          <span class="text-black">DC</span> COMICS
+        </h1>
+        <img
+          src="assets/images/moonknight-removebg-preview.png"
+          alt=""
+          class="w-full h-full z-20"
+        />
+      </div>
+      <div
+        class="relative col-span-2 row-span-2 pl-6 w-full h-auto rounded-lg overflow-hidden flex items-center justify-between bg-gradient-to-l from-velvet via-yellow-600 to-transparent"
+      >
+        <h1 class="text-6xl font-freya font-thin w-1/4 text-white">
+          <span class="text-velvet">MARVEL</span> COMICS
+        </h1>
+        <img
+          src="assets/images/ironman-removebg-preview.png"
+          alt=""
+          class="w-3/5 h-full object-cover"
+        />
+      </div>
+      <div
+        class="relative col-span-2 row-span-2 w-full h-auto rounded-lg overflow-hidden bg-gradient-to-r from-[#F4ECDF] via-[#F4ECDF] to-transparent"
+      >
+        <div
+          class="absolute w-full h-[92px] bg-gradient-to-l bg-[#CC1203] to-transparent left-[45%] top-[19.50%]"
+        ></div>
+        <h1
+          class="absolute top-[30%] right-8 text-4xl font-averox font-bold tracking-m"
+        >
+          manga
+        </h1>
+        <img src="assets/images/vabagond.jpg" alt="" class="w-2/4 h-full" />
+      </div>
+    </section>
+
+    <div class="flex flex-col w-full px-16 gap-18 h-full">
+      <div class="flex items-center justify-between w-full">
+        <div class="flex flex-col gap-2">
+          <h1 class="text-4xl font-semibold">Anime & Manga</h1>
+          <p class="text-xl font-thin">There are many variations of passages</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <button class="py-4 px-8 bg-black text-white">FEATURED</button>
+          <button class="py-4 px-8 bg-black text-white">
+            SUPERHERO COMICS
+          </button>
+          <button class="py-4 px-8 bg-black text-white">FANTASY NOVELS</button>
+        </div>
+      </div>
+    </div>
+    <script src="tailwind.config.js"></script>
+  </body>
+</html>
