@@ -13,6 +13,15 @@ tailwind.config = {
       letterSpacing: {
         m: "5px",
       },
+      backgroundImage: {
+        arrow: "url('assets/icons/arrow-down-338-svgrepo-com.svg')",
+      },
+      backgroundSize: {
+        fullsize: "60% 60%",
+      },
+      backgroundPosition: {
+        deadcenter: "50% 60%",
+      },
     },
   },
 };

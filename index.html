@@ -97,7 +97,7 @@
             <img
               src="assets/icons/cart-shopping-svgrepo-com.svg"
               alt=""
-              class="h-7"
+              class="h-7 shopping-cart cursor-pointer cart-icon"
             />
           </div>
           <div class="flex flex-col">
@@ -116,6 +116,29 @@
         <span class="font-bold text-lg text-white">Pages</span>
       </div>
     </nav>
+
+    <div
+      class="fixed z-20 top-0 left-0 w-full h-screen bg-black/50 hidden items-center justify-center fullOverlay"
+    >
+      <div class="w-3/4 h-3/4 bg-white rounded-3xl pt-8 px-8">
+        <div class="flex items-center justify-between w-full">
+          <div class="flex items-center gap-4">
+            <h1 class="text-3xl font-semibold font-averox">Your Cart</h1>
+            <p class="font-thin text-xl totalprice">
+              Total: <span class="font-bold">$500</span>
+            </p>
+          </div>
+          <button
+            class="exitbtn py-2 px-2 border border-black bg-transparent text-base hover:bg-velvet hover:border-velvet hover:text-white transition-all duration-200"
+          >
+            Back to shopping
+          </button>
+        </div>
+        <div
+          class="flex flex-wrap gap-4 w-full h-[50vh] justify-center items-center mt-8 overflow-y-scroll cart-container"
+        ></div>
+      </div>
+    </div>
 
     <!-- special offers -->
     <div class="flex gap-20 px-16">
@@ -224,7 +247,7 @@
       </div>
     </section>
 
-    <div class="flex flex-col w-full px-16 gap-18 h-full">
+    <div class="flex relative flex-col w-full px-16 gap-18 h-full">
       <div class="flex items-center justify-between w-full">
         <div class="flex flex-col gap-2">
           <h1 class="text-4xl font-semibold">Anime & Manga</h1>
@@ -238,28 +261,24 @@
           <button class="py-4 px-8 bg-black text-white">FANTASY NOVELS</button>
         </div>
       </div>
-      <div class="swiper w-full h-full px-16 bg-comicbg py-8">
-        <div class="swiper-wrapper flex items-center w-full h-auto">
-          <div class="swiper-slide bg-white h-[50vh] w-full">
-            <h1>Hello</h1>
-          </div>
-          <div class="swiper-slide h-[50vh] bg-white w-full">
-            <img src="assets/images/marvel.png" alt="" />
-          </div>
-          <div class="swiper-slide h-[50vh] bg-white w-full">
-            <img src="assets/images/moonknight-removebg-preview.png" alt="" />
-          </div>
-          <div class="swiper-slide h-[50vh] bg-white w-full">
-            <h1>Hello</h1>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+
+      <div class="swiper w-full h-full h-full mt-8">
+        <div
+          class="swiper-wrapper flex items-center w-2/4 h-auto slider-container"
+        ></div>
+        <div
+          class="swiper-button-next !bg-slate-300 -rotate-90 !bg-arrow bg-no-repeat bg-deadcenter !bg-fullsize after:hidden !top-10 !right-4 p-4 rounded-full w-14 h-14"
+        ></div>
+        <div
+          class="swiper-button-prev !bg-slate-300 rotate-90 !bg-arrow bg-no-repeat bg-deadcenter !bg-fullsize after:hidden !top-10 !left-4 p-4 rounded-full w-14 h-14"
+        ></div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/siema/1.5.1/siema.min.js"></script>
 
     <script src="tailwind.config.js"></script>
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
